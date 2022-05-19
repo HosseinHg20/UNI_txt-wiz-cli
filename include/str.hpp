@@ -8,6 +8,7 @@ class Str : public Command
 protected:
     std::string result;
     Str(std::string);
+    void print();
 };
 
 #endif // _STR_HPP
