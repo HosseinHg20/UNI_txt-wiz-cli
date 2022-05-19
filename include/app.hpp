@@ -4,6 +4,8 @@
 #include <iostream>
 #include <vector>
 
+#include "capitalize.hpp"
+
 class App
 {
 private:
