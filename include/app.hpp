@@ -5,6 +5,7 @@
 #include <vector>
 
 #include "capitalize.hpp"
+#include "revers.hpp"
 
 class App
 {

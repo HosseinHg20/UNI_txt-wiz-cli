@@ -3,7 +3,7 @@
 using namespace std;
 
 float App::version = 1.2;
-const char* args[] = {"help", "02", "03", "04"};
+const char* args[] = {"help", "str capitalize \"text\"", "str reverse \"text\"", "04"};
 std::vector<std::string> App::commands(args, args + 4);
 
 float App::getVersion(){

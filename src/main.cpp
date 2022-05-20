@@ -26,7 +26,11 @@ int main(int argc, char** argv)
                 // cout << "---------test main 1----------" << endl;
                 Capitalize c(inputs[3]);
             }
-            
+            else if (inputs[2] == "reverse")
+            {
+                // cout << "---------test main 1----------" << endl;
+                Reverse r(inputs[3]);
+            }
         }
         
 
