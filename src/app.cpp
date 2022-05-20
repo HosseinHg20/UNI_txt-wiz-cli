@@ -2,8 +2,8 @@
 
 using namespace std;
 
-float App::version = 1.2;
-const char* args[] = {"help", "str capitalize \"text\"", "str reverse \"text\"", "04"};
+float App::version = 1.4;
+const char* args[] = {"help", "str capitalize \"text\"", "str reverse \"text\"", "str replace \"old\" \"new\" \"text\""};
 std::vector<std::string> App::commands(args, args + 4);
 
 float App::getVersion(){

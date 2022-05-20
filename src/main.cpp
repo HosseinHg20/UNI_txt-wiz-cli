@@ -31,8 +31,12 @@ int main(int argc, char** argv)
                 // cout << "---------test main 1----------" << endl;
                 Reverse r(inputs[3]);
             }
+            else if (inputs[2] == "replace")
+            {
+                // cout << "---------test main 1----------" << endl;
+                Replace r(inputs[5], inputs[3], inputs[4]);
+            }
         }
-        
 
 
         break;
