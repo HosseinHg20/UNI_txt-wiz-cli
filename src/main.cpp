@@ -21,21 +21,28 @@ int main(int argc, char** argv)
         if (inputs[1] == "str")
         {
             // cout << "---------test main 0----------" << endl;
-            if (inputs[2] == "capitalize")
-            {
+            if (inputs[2] == "capitalize" && argc == 4){
                 // cout << "---------test main 1----------" << endl;
                 Capitalize c(inputs[3]);
             }
-            else if (inputs[2] == "reverse")
-            {
+            else if (inputs[2] == "reverse" && argc == 4){
                 // cout << "---------test main 1----------" << endl;
                 Reverse r(inputs[3]);
             }
-            else if (inputs[2] == "replace")
-            {
+            else if (inputs[2] == "replace" && argc == 6){
                 // cout << "---------test main 1----------" << endl;
                 Replace r(inputs[5], inputs[3], inputs[4]);
             }
+            else if (inputs[2] == "split" && argc == 5){
+                // cout << "---------test main 1----------" << endl;
+                Split s(inputs[3], (inputs[4])[0]);
+            }
+            else{
+                App::help();
+            }
+        }
+        else{
+            App::help();
         }
 
 

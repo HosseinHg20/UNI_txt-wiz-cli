@@ -7,6 +7,7 @@
 #include "capitalize.hpp"
 #include "revers.hpp"
 #include "replace.hpp"
+#include "split.hpp"
 
 class App
 {
