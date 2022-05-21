@@ -9,6 +9,7 @@
 #include "replace.hpp"
 #include "split.hpp"
 #include "evaluate.hpp"
+#include "find.hpp"
 
 class App
 {

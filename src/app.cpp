@@ -2,14 +2,15 @@
 
 using namespace std;
 
-float App::version = 1.5;
+float App::version = 1.7;
 const char* args[] = {"help",
                         "str capitalize \"text\"",
                         "str reverse \"text\"",
                         "str replace \"old\" \"new\" \"text\"", 
                         "str split \"text\" \"delimiter\"", 
-                        "str evaluate \"number\" \"base\""};
-std::vector<std::string> App::commands(args, args + 6);
+                        "str evaluate \"number\" \"base\"", 
+                        "str find \"match\" \"text\""};
+std::vector<std::string> App::commands(args, args + 7);
 
 float App::getVersion(){
     return version;
