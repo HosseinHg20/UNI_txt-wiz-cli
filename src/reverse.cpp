@@ -11,7 +11,7 @@ Reverse::Reverse(string main) : Str(main){
 }
 
 void Reverse::convertion(){
-    for (int i = mainText.size(); i >= 0; i--)
+    for (int i = mainText.size() - 1; i >= 0; i--)
     {
         cout << mainText[i];
     }

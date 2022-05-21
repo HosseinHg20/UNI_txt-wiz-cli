@@ -7,8 +7,9 @@ const char* args[] = {"help",
                         "str capitalize \"text\"",
                         "str reverse \"text\"",
                         "str replace \"old\" \"new\" \"text\"", 
-                        "str split \"text\" \"delimiter\""};
-std::vector<std::string> App::commands(args, args + 5);
+                        "str split \"text\" \"delimiter\"", 
+                        "str evaluate \"number\" \"base\""};
+std::vector<std::string> App::commands(args, args + 6);
 
 float App::getVersion(){
     return version;

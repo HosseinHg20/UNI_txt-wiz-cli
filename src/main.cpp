@@ -37,6 +37,10 @@ int main(int argc, char** argv)
                 // cout << "---------test main 1----------" << endl;
                 Split s(inputs[3], (inputs[4])[0]);
             }
+            else if (inputs[2] == "evaluate" && argc == 5){
+                cout << "---------test main 1----------" << endl;
+                Evaluate(inputs[3], stoi(inputs[4]));
+            }
             else{
                 App::help();
             }
