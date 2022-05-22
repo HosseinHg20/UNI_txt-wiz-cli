@@ -6,6 +6,8 @@
 class Reverse : public Str
 {
 public:
+    static void help();
+    static void moreHelp();
     Reverse(std::string);
 private:
     void convertion();

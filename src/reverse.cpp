@@ -17,3 +17,17 @@ void Reverse::convertion(){
     }
     
 }
+
+void Reverse::help(){
+    cout << endl;
+    cout << "* usage : ./txt-wiz-cli str Reverse \"text\"" << endl;
+    cout << "                                     --help" << endl << endl;
+}
+
+void Reverse::moreHelp(){
+    help();
+    cout << endl;
+
+    cout << "example " << endl;
+    cout << "informations ..." << endl << endl;
+}

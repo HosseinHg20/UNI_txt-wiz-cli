@@ -6,6 +6,8 @@
 class Replace : public Str
 {
 public:
+    static void help();
+    static void moreHelp();
     Replace(std::string, std::string, std::string);
 private:
     void convertion();

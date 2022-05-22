@@ -48,3 +48,18 @@ void Evaluate::conversion(){
     }
     Str::result = to_string(result);
 }
+
+
+void Evaluate::help(){
+    cout << endl;
+    cout << "* usage : ./txt-wiz-cli str Evaluate \"number\" \"bace\"" << endl;
+    cout << "                                     --help" << endl << endl;
+}
+
+void Evaluate::moreHelp(){
+    help();
+    cout << endl;
+    
+    cout << "example " << endl;
+    cout << "informations ..." << endl << endl;
+}

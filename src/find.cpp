@@ -28,3 +28,18 @@ void Find::conversion(){
         throw;
     }
 }
+
+
+void Find::help(){
+    cout << endl;
+    cout << "* usage : ./txt-wiz-cli str Find \"match\" \"text\"" << endl;
+    cout << "                                 --help" << endl << endl;
+}
+
+void Find::moreHelp(){
+    help();
+    cout << endl;
+    
+    cout << "example " << endl;
+    cout << "informations ..." << endl << endl;
+}

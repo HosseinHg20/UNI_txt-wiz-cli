@@ -6,6 +6,8 @@
 class Find : public Str
 {
 public:
+    static void help();
+    static void moreHelp();
     Find(std::string, std::string);
 private:
     void conversion();

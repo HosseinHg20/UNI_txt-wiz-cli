@@ -19,3 +19,17 @@ void Replace::convertion(){
     }
     result = mainText;
 }
+
+void Replace::help(){
+    cout << endl;
+    cout << "* usage : ./txt-wiz-cli str Replace \"old\" \"new\" \"text\"" << endl;
+    cout << "                                     --help" << endl << endl;
+}
+
+void Replace::moreHelp(){
+    help();
+    cout << endl;
+
+    cout << "example " << endl;
+    cout << "informations ..." << endl << endl;
+}

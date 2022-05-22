@@ -7,6 +7,8 @@
 class Split : public Str
 {
 public:
+    static void help();
+    static void moreHelp();
     Split(std::string, char);
 private:
     void convertion();

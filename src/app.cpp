@@ -2,23 +2,33 @@
 
 using namespace std;
 
-float App::version = 1.7;
-const char* args[] = {"help",
-                        "str capitalize \"text\"",
-                        "str reverse \"text\"",
-                        "str replace \"old\" \"new\" \"text\"", 
-                        "str split \"text\" \"delimiter\"", 
-                        "str evaluate \"number\" \"base\"", 
-                        "str find \"match\" \"text\""};
-std::vector<std::string> App::commands(args, args + 7);
+float App::version = 1.8;
 
 float App::getVersion(){
     return version;
 }
 
+void App::moreHelp(){
+    help();
+
+    cout << "*** more help [app] :" << endl;
+    Str::moreHelp();
+}
 void App::help(){
+    cout << endl;
+    cout << "* usage : ./txt-wiz-cli str" << endl;
+    cout << "                        str --help" << endl;
+    cout << "                        txt" << endl;
+    cout << "                        txt --help" << endl;
+    cout << "                        --help" << endl;
+
+    cout << endl;
+    cout << "  #              #  " << endl;
+    cout << "#####   #  #   #####" << endl;
+    cout << "  #      #       #  " << endl;
+    cout << "  #    #  #      #  " << endl << endl;
+
     cout << "Verson : " << version << endl;
-    cout << "usage : ./txt-wiz-cli [ " << commands[0] << " ] " << endl;
-    for (size_t i = 1; i < commands.size(); i++)
-        cout << "                      [ " << commands[i] << " ] \n";
+    cout << "informations ..." << endl << endl;
+    
 }

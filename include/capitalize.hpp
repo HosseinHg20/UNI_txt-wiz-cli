@@ -6,6 +6,8 @@
 class Capitalize : public Str
 {
 public:
+    static void help();
+    static void moreHelp();
     Capitalize(std::string);
 private:
     void convertion();

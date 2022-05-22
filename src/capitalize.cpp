@@ -20,3 +20,16 @@ void Capitalize::convertion(){
         }
     }
 }
+
+void Capitalize::help(){
+    cout << endl;
+    cout << "* usage : ./txt-wiz-cli str capitalize \"text\"" << endl;
+    cout << "                                       --help" << endl << endl;
+}
+
+void Capitalize::moreHelp(){
+    help();
+    cout << endl;
+    cout << "informations ..." << endl << endl;
+    cout << "example capitalize";
+}

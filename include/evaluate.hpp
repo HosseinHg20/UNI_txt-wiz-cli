@@ -7,6 +7,8 @@
 class Evaluate : public Str
 {
 public:
+    static void help();
+    static void moreHelp();
     Evaluate(std::string, int);
 private:
     void conversion();

@@ -24,3 +24,17 @@ void Split::convertion(){
     }
     result.append(word + "}");
 }
+
+void Split::help(){
+    cout << endl;
+    cout << "* usage : ./txt-wiz-cli str Split \"text\" \"delimiter\"" << endl;
+    cout << "                                  --help" << endl << endl;
+}
+
+void Split::moreHelp(){
+    help();
+    cout << endl;
+    
+    cout << "example " << endl;
+    cout << "informations ..." << endl << endl;
+}

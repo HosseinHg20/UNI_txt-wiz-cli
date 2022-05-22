@@ -15,10 +15,10 @@ class App
 {
 private:
     static float version;
-    static std::vector<std::string> commands;
 public:
     static float getVersion();
     static void help();
+    static void moreHelp();
 };
 
 #endif // _APP_HPP
