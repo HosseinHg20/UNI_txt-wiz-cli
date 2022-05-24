@@ -10,6 +10,8 @@
 #include "split.hpp"
 #include "evaluate.hpp"
 #include "find.hpp"
+#include "txt.hpp"
+#include "indent.hpp"
 
 class App
 {

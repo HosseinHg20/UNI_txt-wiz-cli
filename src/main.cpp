@@ -19,7 +19,7 @@ int main(int argc, char** argv){
     if (inputs[1] == "--help"){
         App::moreHelp();
     }
-    
+
     else if (inputs[1] == "str"){
         // cout << "---------test main 0----------" << endl;
         if (argc == 2){
@@ -123,6 +123,36 @@ int main(int argc, char** argv){
             Str::help();
         }
     }
+
+    else if (inputs[1] == "txt"){
+        // cout << "---------test main 0----------" << endl;
+        if (argc == 2){
+            Txt::help();
+        }
+        else if (inputs[2] == "--help"){
+            // cout << "---------test main 1----------" << endl;
+            Txt::moreHelp();
+        }
+        else if (inputs[2] == "indent"){
+            // cout << "---------test main 1----------" << endl;
+            if (argc == 3){
+                Indent::help();
+            }
+            else if (inputs[3] == "--help"){
+                Indent::moreHelp();
+            }
+            else if (argc == 7 && inputs[5] == "-n"){
+                Indent i(inputs[3], inputs[4], stoi(inputs[6]));
+            }
+            else if (argc == 5){
+                Indent i(inputs[3], inputs[4]);
+            }
+            else {
+                Indent::help();
+            }
+        }
+    }
+
     else{
         App::help();
     }
