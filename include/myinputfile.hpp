@@ -9,6 +9,9 @@ class MyInputFile : public std::ifstream
 public:
     MyInputFile(std::string);
     ~MyInputFile();
+
+    std::string getWord();
+    void restart();
 };
 
 

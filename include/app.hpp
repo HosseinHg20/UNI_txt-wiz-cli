@@ -12,6 +12,7 @@
 #include "find.hpp"
 #include "txt.hpp"
 #include "indent.hpp"
+#include "txtwrap.hpp"
 
 class App
 {

@@ -151,6 +151,24 @@ int main(int argc, char** argv){
                 Indent::help();
             }
         }
+        else if (inputs[2] == "txtwrap"){
+            // cout << "---------test main 1----------" << endl;
+            if (argc == 3){
+                Wrap::help();
+            }
+            else if (inputs[3] == "--help"){
+                Wrap::moreHelp();
+            }
+            else if (argc == 6 && inputs[5] == "-f"){
+                Wrap w(inputs[3], stoi(inputs[4]), true);
+            }
+            else if (argc == 5){
+                Wrap w(inputs[3], stoi(inputs[4]), false);
+            }
+            else {
+                Wrap::help();
+            }
+        }
     }
 
     else{

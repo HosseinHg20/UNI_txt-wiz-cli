@@ -28,3 +28,14 @@ Indent::~Indent()
 {
 
 }
+
+void Indent::help(){
+    cout << endl;
+    cout << "help indent";
+    cout << endl;
+}
+void Indent::moreHelp(){
+    cout << endl;
+    cout << "more help indent";
+    cout << endl;
+}

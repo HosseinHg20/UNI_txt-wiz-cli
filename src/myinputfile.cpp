@@ -15,3 +15,20 @@ MyInputFile::~MyInputFile()
 {
     close();
 }
+
+string MyInputFile::getWord(){
+    string word;
+    char ch;
+    while (word.back() != '\n' && ((ch = get()) != ' '))
+    {
+        if (eof())
+            return word;
+        
+        word.push_back(ch);
+    }
+    return word;
+}
+
+void MyInputFile::restart(){
+    seekg(0);
+}

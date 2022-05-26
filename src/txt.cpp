@@ -18,7 +18,7 @@ void Txt::moreHelp(){
 
 void Txt::help(){
     cout << endl;
-
+    cout << "help txt";
     cout << endl;
 }
 
