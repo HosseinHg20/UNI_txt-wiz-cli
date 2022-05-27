@@ -169,6 +169,21 @@ int main(int argc, char** argv){
                 Wrap::help();
             }
         }
+        else if (inputs[2] == "diff"){
+            // cout << "---------test main 1----------" << endl;
+            if (argc == 3){
+                Diff::help();
+            }
+            else if (inputs[3] == "--help"){
+                Diff::moreHelp();
+            }
+            else if (argc == 5){
+                Diff d(inputs[3], inputs[4]);
+            }
+            else {
+                Diff::help();
+            }
+        }
     }
 
     else{

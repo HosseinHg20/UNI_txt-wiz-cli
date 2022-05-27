@@ -2,7 +2,7 @@
 
 using namespace std;
 
-float App::version = 1.9;
+float App::version = 2.2;
 
 float App::getVersion(){
     return version;

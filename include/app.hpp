@@ -13,6 +13,7 @@
 #include "txt.hpp"
 #include "indent.hpp"
 #include "txtwrap.hpp"
+#include "diff.hpp"
 
 class App
 {
