@@ -11,7 +11,34 @@ Wrap::Wrap(string main, int w, bool f) : Txt(main), width(w), f_flag(f)
 }
 
 void Wrap::convertion_f(){
-
+    string this_line;
+    while (!file.eof())
+    {
+        this_line.push_back(file.get());
+        if (this_line.back() == '\n'){
+            cout << this_line;
+            this_line = "";
+        }
+        if (this_line.size() == width){
+            if (this_line[width - 1] == ' '){
+                cout << this_line.substr(0, width - 1) << endl;
+                this_line = "";                
+            }
+            else if (this_line[width - 2] == ' '){
+                cout << this_line.substr(0, width - 2) << endl;
+                this_line = this_line.substr(width - 1, 1);
+            }
+            else if (this_line[width - 3] == ' '){
+                cout << this_line.substr(0, width - 2) << endl;
+                this_line = this_line.substr(width - 2, 2);
+            }
+            else {
+                cout << this_line.substr(0, width - 2) << "-" << endl;
+                this_line = this_line.substr(width - 2, 2);
+            }
+        }
+    }
+    cout << this_line << endl;
 }
 void Wrap::convertion(){
 
