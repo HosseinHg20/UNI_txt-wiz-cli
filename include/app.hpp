@@ -14,6 +14,7 @@
 #include "indent.hpp"
 #include "txtwrap.hpp"
 #include "diff.hpp"
+#include "slide_show.hpp"
 
 class App
 {

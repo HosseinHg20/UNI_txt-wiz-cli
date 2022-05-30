@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
 #include "./../include/app.hpp"
-using namespace std;
 
+using namespace std;
   
 int main(int argc, char** argv){
 
@@ -182,6 +182,27 @@ int main(int argc, char** argv){
             }
             else {
                 Diff::help();
+            }
+        }
+        else if (inputs[2] == "slide-show"){
+            // cout << "---------test main 1----------" << endl;
+            if (argc == 3){
+                SlideShow::help();
+            }
+            else if (inputs[3] == "--help"){
+                SlideShow::moreHelp();
+            }
+            else if (argc == 4){
+                SlideShow s(inputs[3]);
+            }
+            else if (argc == 6 && inputs[4] == "-d"){
+                SlideShow s(inputs[3], inputs[5][0]);
+            }
+            else if (argc == 6 && inputs[4] == "-l"){
+                SlideShow s(inputs[3], stoi(inputs[5]));
+            }
+            else {
+                SlideShow::help();
             }
         }
     }
