@@ -107,16 +107,16 @@ int main(int argc, char** argv){
         else if (inputs[2] == "find"){
             // cout << "---------test main 1----------" << endl;
             if (argc == 3){
-                Evaluate::help();
+                Find::help();
             }
             else if (inputs[3] == "--help"){
-                Evaluate::moreHelp();
+                Find::moreHelp();
             }
             else if (argc == 5){
                 Find(inputs[4], inputs[3]);
             }
             else {
-                Evaluate::help();
+                Find::help();
             }
         }
         else{

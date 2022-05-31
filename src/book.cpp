@@ -36,6 +36,16 @@ void Book::open(){
     
 }
 
+int Book::getPagesNumber()
+{
+    return page.size();
+};
+
+string Book::getPage(int n)
+{
+    return page[n - 1]; 
+};
+
 void Book::print(int n){
     cout<< endl
         << "page : " << n << endl << endl
@@ -44,13 +54,3 @@ void Book::print(int n){
         << "help: p=previous, n=next, q=quit" << endl
         << "--->";
 }
-
-
-int Book::getPagesNumber()
-{
-    return page.size();
-};
-string Book::getPage(int n)
-{
-    return page[n - 1]; 
-};

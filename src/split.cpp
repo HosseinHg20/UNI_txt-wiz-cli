@@ -3,11 +3,8 @@
 using namespace std;
 
 Split::Split(string main, char ch) : Str(main), delimiter(ch){
-    // cout << "test1" << endl;
     convertion();
-    // cout << "test2" << endl;
     print();
-    // cout << "test3" << endl;
 }
 
 void Split::convertion(){
@@ -18,16 +15,15 @@ void Split::convertion(){
             result.append(word + ", ");
             word = "";
         }
-        else{
+        else
             word.push_back(mainText[i]);
-        }
     }
     result.append(word + "}");
 }
 
 void Split::help(){
     cout << endl;
-    cout << "* usage : ./txt-wiz-cli str Split \"text\" \"delimiter\"" << endl;
+    cout << "* usage : ./txt-wiz-cli str split \"text\" \"delimiter\"" << endl;
     cout << "                                  --help" << endl << endl;
 }
 

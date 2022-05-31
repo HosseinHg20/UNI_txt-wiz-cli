@@ -1,14 +1,12 @@
 #include "./../include/replace.hpp"
+
 #include <vector>
 
 using namespace std;
 
 Replace::Replace(string main, string from, string to) : Str(main), before(from), after(to){
-    // cout << "test1" << endl;
     convertion();
-    // cout << "test2" << endl;
     print();
-    // cout << "test3" << endl;
 }
 
 void Replace::convertion(){
@@ -22,7 +20,7 @@ void Replace::convertion(){
 
 void Replace::help(){
     cout << endl;
-    cout << "* usage : ./txt-wiz-cli str Replace \"old\" \"new\" \"text\"" << endl;
+    cout << "* usage : ./txt-wiz-cli str replace \"old\" \"new\" \"text\"" << endl;
     cout << "                                     --help" << endl << endl;
 }
 

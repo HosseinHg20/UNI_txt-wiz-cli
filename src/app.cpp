@@ -2,25 +2,19 @@
 
 using namespace std;
 
-float App::version = 2.2;
+float App::version = 2.4;
 
 float App::getVersion(){
     return version;
 }
 
-void App::moreHelp(){
-    help();
-
-    cout << "*** more help [app] :" << endl;
-    Str::moreHelp();
-}
 void App::help(){
-    cout << endl;
-    cout << "* usage : ./txt-wiz-cli str" << endl;
-    cout << "                        str --help" << endl;
-    cout << "                        txt" << endl;
-    cout << "                        txt --help" << endl;
-    cout << "                        --help" << endl;
+    cout<< endl
+        << "* usage : ./txt-wiz-cli str" << endl
+        << "                        str --help" << endl
+        << "                        txt" << endl
+        << "                        txt --help" << endl
+        << "                        --help" << endl;
 
     cout << endl;
     cout << "  #              #  " << endl;
@@ -30,5 +24,12 @@ void App::help(){
 
     cout << "Verson : " << version << endl;
     cout << "informations ..." << endl << endl;
-    
+}
+
+void App::moreHelp(){
+    help();
+
+    cout << "*** more help [app] :" << endl;
+    Str::moreHelp();
+    Txt::moreHelp();
 }

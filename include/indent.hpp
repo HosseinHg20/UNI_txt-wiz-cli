@@ -14,10 +14,6 @@ public:
     static void moreHelp();
     Indent(std::string, std::string);
     Indent(std::string, std::string, int);
-    ~Indent();
 };
-
-
-
 
 #endif // _INDENT_HPP

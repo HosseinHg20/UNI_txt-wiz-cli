@@ -14,7 +14,4 @@ public:
     Diff(std::string, std::string);
 };
 
-
-
-
 #endif // _DIFF_HPP

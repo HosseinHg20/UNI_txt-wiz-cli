@@ -12,8 +12,7 @@ Wrap::Wrap(string main, int w, bool f) : Txt(main), width(w), f_flag(f)
 
 void Wrap::convertion_f(){
     string this_line;
-    while (!file.eof())
-    {
+    while (!file.eof()){
         this_line.push_back(file.get());
         if (this_line.back() == '\n'){
             cout << this_line;
@@ -41,7 +40,6 @@ void Wrap::convertion_f(){
     cout << this_line << endl;
 }
 void Wrap::convertion(){
-
     string word;
     int this_line_width = 0;
     while (!file.eof()){ 
@@ -65,16 +63,12 @@ void Wrap::convertion(){
     
 }
 
-Wrap::~Wrap()
-{
-
-}
-
 void Wrap::help(){
     cout << endl;
     cout << "help Wrap";
     cout << endl;
 }
+
 void Wrap::moreHelp(){
     cout << endl;
     cout << "more help Wrap";

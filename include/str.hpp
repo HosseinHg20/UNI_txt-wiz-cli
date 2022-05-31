@@ -11,7 +11,6 @@ public:
     static void help();
     static void moreHelp();
 protected:
-    static std::vector<std::string> commands;
     std::string result;
     Str(std::string);
     void print();

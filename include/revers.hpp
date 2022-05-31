@@ -13,5 +13,4 @@ private:
     void convertion();
 };
 
-
 #endif // _REVERSE_HPP

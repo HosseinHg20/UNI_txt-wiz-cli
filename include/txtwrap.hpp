@@ -14,10 +14,6 @@ public:
     static void help();
     static void moreHelp();
     Wrap(std::string, int, bool);
-    ~Wrap();
 };
-
-
-
 
 #endif // _WRAP_HPP

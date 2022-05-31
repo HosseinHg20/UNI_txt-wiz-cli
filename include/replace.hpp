@@ -15,5 +15,4 @@ private:
     std::string after;
 };
 
-
 #endif // _REPLACE_HPP

@@ -11,9 +11,6 @@ private:
 public:
     void push(std::string);
     void open();
-    void next();
-    void previous();
-
     int getPagesNumber();
     std::string getPage(int n);
     void print(int);

@@ -10,6 +10,4 @@ protected:
     Command(std::string);
 };
 
-
-
 #endif // _COMMAND_HPP

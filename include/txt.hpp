@@ -1,8 +1,6 @@
 #ifndef _TXT_HPP
 #define _TXT_HPP
 
-#include <vector>
-
 #include "command.hpp"
 #include "myinputfile.hpp"
 
@@ -14,7 +12,6 @@ public:
 protected:
     Txt(std::string);
     MyInputFile file;
-    
 };
 
 #endif // _TXT_HPP

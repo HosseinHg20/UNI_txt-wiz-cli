@@ -10,10 +10,10 @@ public:
     static void help();
     static void moreHelp();
     Evaluate(std::string, int);
+    void print();
 private:
     void conversion();
     int base;
 };
-
 
 #endif // _EVALUTE_HPP

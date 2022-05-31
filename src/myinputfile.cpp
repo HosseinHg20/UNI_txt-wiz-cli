@@ -2,13 +2,11 @@
 
 using namespace std;
 
-
 MyInputFile::MyInputFile(string name)
 {
     open(name);
     if (!is_open())
         throw 123;
-    
 }
 
 MyInputFile::~MyInputFile()
@@ -19,16 +17,11 @@ MyInputFile::~MyInputFile()
 string MyInputFile::getWord(){
     string word;
     char ch;
-    while (word.back() != '\n' && ((ch = get()) != ' '))
-    {
+    while (word.back() != '\n' && ((ch = get()) != ' ')){
         if (eof())
             return word;
         
         word.push_back(ch);
     }
     return word;
-}
-
-void MyInputFile::restart(){
-    seekg(0);
 }

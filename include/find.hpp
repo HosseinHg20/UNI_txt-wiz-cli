@@ -14,5 +14,4 @@ private:
     std::string match;
 };
 
-
 #endif // _FIND_HPP

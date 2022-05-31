@@ -11,9 +11,7 @@ Txt::Txt(string main) : Command(main), file(main){
 void Txt::moreHelp(){
     help();
     cout << endl;
-    
-    cout << "** more help [txt] :" << endl;
-    
+    cout << "** more help [txt] :" << endl;   
 }
 
 void Txt::help(){

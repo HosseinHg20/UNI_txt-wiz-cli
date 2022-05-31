@@ -2,40 +2,12 @@
 
 using namespace std;
 
-
-SlideShow::SlideShow(string name) : Txt(name), len(10){
-
-}
-
 SlideShow::SlideShow(string name1, int l) : Txt(name1), len(l){
     setAllPages_l();
     char input;
-        while (1)
-        { 
-            input = getchar();
-            switch (input)
-            {
-            case 'q':
-                return;
-                break;
-            case 'o':
-                book.open();
-                return;
-                break;
-            }
-        }
-
-}
-
-SlideShow::SlideShow(string name1, char d) : Txt(name1), del(d){
-    setAllPages_d();
-
-    char input;
-    while (1)
-    { 
+    while (1){ 
         input = getchar();
-        switch (input)
-        {
+        switch (input){
         case 'q':
             return;
             break;
@@ -45,10 +17,23 @@ SlideShow::SlideShow(string name1, char d) : Txt(name1), del(d){
             break;
         }
     }
-    
 }
 
-void SlideShow::convertion(){
+SlideShow::SlideShow(string name1, char d) : Txt(name1), del(d){
+    setAllPages_d();
+    char input;
+    while (1){ 
+        input = getchar();
+        switch (input){
+        case 'q':
+            return;
+            break;
+        case 'o':
+            book.open();
+            return;
+            break;
+        }
+    }
     
 }
 
@@ -68,6 +53,8 @@ void SlideShow::setAllPages_l(){
             cout << ".";
         }
     }
+    if (str.back() != '\n')
+        book.push(str);
     cout << endl << endl
          << "number of pages : " << book.getPagesNumber() << endl
          << "length : " << len << endl << endl
