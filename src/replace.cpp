@@ -26,8 +26,9 @@ void Replace::help(){
 
 void Replace::moreHelp(){
     help();
-    cout << endl;
-
-    cout << "example " << endl;
-    cout << "informations ..." << endl << endl;
+    cout << endl
+         << "replace" << endl
+         << "./txt_wiz_cli str reverse <old> <new> <string>" << endl 
+         << "input : ./txt_wiz_cli str reverse \"mini\" \"nini\" \"mini project\"" << endl
+         << "output : nini project" << endl;
 }

@@ -54,8 +54,9 @@ void Evaluate::help(){
 
 void Evaluate::moreHelp(){
     help();
-    cout << endl;
-    
-    cout << "example " << endl;
-    cout << "informations ..." << endl << endl;
+    cout << endl
+         << "evaluate" << endl
+         << "./txt_wiz_cli str evaluate <number-string> <base>" << endl 
+         << "input : ./txt-wiz-cli str evaluate \"A2\" 16" << endl
+         << "output : 162" << endl;
 }

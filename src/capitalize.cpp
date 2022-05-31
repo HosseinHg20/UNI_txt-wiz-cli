@@ -10,9 +10,11 @@ void Capitalize::help(){
 
 void Capitalize::moreHelp(){
     help();
-    cout << endl;
-    cout << "informations ..." << endl << endl;
-    cout << "example capitalize ...";
+    cout << endl
+         << "capitalize" << endl
+         << "./txt_wiz_cli str capitalize <string>" << endl 
+         << "input : ./txt_wiz_cli str capitalize \"mini project\"" << endl
+         << "output : Mini Project" << endl;
 }
 
 Capitalize::Capitalize(string main) : Str(main){

@@ -20,8 +20,9 @@ void Reverse::help(){
 
 void Reverse::moreHelp(){
     help();
-    cout << endl;
-
-    cout << "example ..." << endl;
-    cout << "informations ..." << endl << endl;
+    cout << endl
+         << "reverse" << endl
+         << "./txt_wiz_cli str reverse <string>" << endl 
+         << "input : ./txt_wiz_cli str reverse \"mini project\"" << endl
+         << "output : tcejorp inim" << endl;
 }

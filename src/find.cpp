@@ -33,8 +33,9 @@ void Find::help(){
 
 void Find::moreHelp(){
     help();
-    cout << endl;
-    
-    cout << "example " << endl;
-    cout << "informations ..." << endl << endl;
+    cout << endl
+         << "find" << endl
+         << "./txt_wiz_cli str find <match> <string>" << endl 
+         << "input : ./txt-wiz-cli str find \"mi--\" \"mini Project\"" << endl
+         << "output : mini" << endl;
 }
